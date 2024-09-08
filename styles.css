@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.logo{
+    padding: 5px;
+}
+
+.navbar-Title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.developer-tile {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 35px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120%;
+    width: 100%;
+}
+
+.developer-tile h3{
+    margin: 5px 0;
+    font-size:larger;
+    text-align: center;
+    text-justify: auto;
+}
+
+.developer-tile p {
+    margin: 5px 0;
+    font-size: medium;
+    text-align: center;
+    text-justify: auto;
+}
+
+.developer-tile:hover {
+    transform: scale(1.15);
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid grey;
+    padding: 2px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:fill;
+}
+
+.developer-details-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
+
+.developer-details-content {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    transform: scale(0.7);
+    transition: transform 0.5s ease;
+}
+
+.developer-details-content img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.developer-details-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.developer-details-content.show {
+    transform: scale(1);
+}
