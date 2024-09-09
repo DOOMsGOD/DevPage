@@ -2,25 +2,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    margin-bottom: 20px;
-}
-
-.logo{
-    padding: 5px;
-}
-
-.navbar-Title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link {
-    font-size: 1rem;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .developer-tile {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
