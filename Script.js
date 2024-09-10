@@ -1,31 +1,33 @@
+// Developer Info
 const developerBios = {
-    'John Doe': {
-        bio: "John Doe is a senior front-end developer with 10 years of experience in web development. He specializes in React and Angular.",
-        img: "john-doe.jpg",  // Example image path, replace with actual
-        role: "Senior Frontend Developer"
+    'Krishna Khurana': {
+        bio: "Krishna Khurana is a skilled backend & UI developer with expertise in various programming languages and user interface designs.",
+        img: "developer1.jpg",
+        role: "Backend & UI Developer"
     },
-    'Jane Smith': {
-        bio: "Jane Smith is a full-stack developer who loves building robust back-end services and scalable applications.",
-        img: "jane-smith.jpg",  // Example image path, replace with actual
-        role: "Full Stack Developer"
+    'Taranpreet Singh': {
+        bio: "Taranpreet Singh is responsible for the Developer Page and is also proficient in UI development.",
+        img: "developer2.jpg",
+        role: "Developer Page & UI Developer"
     },
-    'David Brown': {
-        bio: "David Brown is a DevOps engineer with a passion for automation and cloud technologies.",
-        img: "david-brown.jpg",  // Example image path, replace with actual
-        role: "DevOps Engineer"
+    'Daksh Gulati': {
+        bio: "Daksh Gulati is a graphics designer who brings UI elements to life with creative designs.",
+        img: "developer3.jpg", 
+        role: "Graphics & UI Designer"
     },
-    'Emily White': {
-        bio: "Emily White is a creative UX/UI designer with a knack for improving user experience through innovative design.",
-        img: "emily-white.jpg",  // Example image path, replace with actual
-        role: "UX/UI Designer"
+    'Dev Gulati': {
+        bio: "Dev Gulati is a passionate frontend developer with a keen eye for building responsive websites.",
+        img: "developer4.jpg",  
+        role: "Frontend Developer"
     },
-    'Michael Green': {
-        bio: "Michael Green is a mobile app developer with expertise in both Android and iOS platforms.",
-        img: "michael-green.jpg",  // Example image path, replace with actual
-        role: "Mobile App Developer"
+    'Mehak': {
+        bio: "Mehak ensures the quality and functionality of the project through meticulous testing.",
+        img: "developer5.jpg",  
+        role: "Testing"
     }
 };
 
+// To Show the details of Developer
 function showDetails(element) {
     const name = element.querySelector('h3').textContent;
     const role = element.querySelector('p').textContent;
@@ -53,6 +55,7 @@ function showDetails(element) {
     setTimeout(() => content.classList.add('show'), 100);
 }
 
+// To Hide the details of Developer 
 function hideDetails() {
     const overlay = document.getElementById('developer-details');
     const content = document.querySelector('.developer-details-content');
