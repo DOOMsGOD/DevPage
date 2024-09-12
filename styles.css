@@ -1,8 +1,10 @@
-body {
+body
+{
     font-family: Arial, sans-serif;
 }
-
-.developer-tile {
+/*Developer Tiles*/
+.developer-tile
+{
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     padding: 35px;
@@ -15,26 +17,26 @@ body {
     height: 120%;
     width: 100%;
 }
-
-.developer-tile h3{
+.developer-tile h3
+{
     margin: 5px 0;
     font-size:larger;
     text-align: center;
     text-justify: auto;
 }
-
-.developer-tile p {
+.developer-tile p
+{
     margin: 5px 0;
     font-size: medium;
     text-align: center;
     text-justify: auto;
 }
-
-.developer-tile:hover {
+.developer-tile:hover 
+{
     transform: scale(1.15);
 }
-
-.photo-container {
+.photo-container 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,14 +48,14 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
-
-.photo-container img {
+.photo-container img 
+{
     max-width: 100%;
     max-height: 100%;
     object-fit:fill;
 }
-
-.developer-details-overlay {
+.developer-details-overlay 
+{
     display: none;
     position: fixed;
     top: 0;
@@ -66,8 +68,8 @@ body {
     z-index: 1000;
     transition: opacity 0.5s ease;
 }
-
-.developer-details-content {
+.developer-details-content 
+{
     background-color: white;
     padding: 20px;
     text-align: center;
@@ -77,30 +79,31 @@ body {
     transform: scale(0.7);
     transition: transform 0.5s ease;
 }
-
-.developer-details-content img {
+.developer-details-content img 
+{
     max-width: 150px;
     margin-bottom: 20px;
 }
-
-.close-btn {
+.close-btn 
+{
     position: absolute;
     top: 15px;
     right: 15px;
     font-size: 24px;
     cursor: pointer;
 }
-
-.developer-details-overlay.show {
+.developer-details-overlay.show 
+{
     display: flex;
     opacity: 1;
 }
-
-.developer-details-content.show {
+.developer-details-content.show 
+{
     transform: scale(1);
 }
-/* Style for the developer details overlay */
-.developer-details-overlay {
+/*Developer Details */
+.developer-details-overlay 
+{
     position: fixed;
     top: 0;
     left: 0;
@@ -111,10 +114,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-.developer-details-overlay.show {
+.developer-details-overlay.show 
+{
     display: flex;
 }
-.developer-details-content {
+.developer-details-content 
+{
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -123,20 +128,81 @@ body {
     width: 100%;
     position: relative;
 }
-.developer-details-content img {
+.developer-details-content img 
+{
     width: 150px;
     border-radius: 50%;
     border: 5px solid gray; 
     padding: 5px;
 }
-.developer-details-content h3, .developer-details-content p {
+.developer-details-content h3, .developer-details-content p
+{
     margin: 15px 0;
 }
-.close-btn {
+.close-btn
+{
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 30px;
     cursor: pointer;
     color: black;
+}
+/* Footer */
+footer 
+{
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+}
+footer h5 
+{
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p, footer ul 
+{
+    color: #dddddd;
+}
+footer ul 
+{
+    list-style: none;
+    padding-left: 0;
+}
+footer ul li 
+{
+    margin-bottom: 10px;
+}
+footer ul li a 
+{
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover 
+{
+    color: #ffffff;
+}
+footer .social-icons a 
+{
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+footer .social-icons a:hover 
+{
+    color: #17a2b8;
+}
+footer .text-center p 
+{
+    margin-top: 20px;
+    color: #cccccc;
+    font-size: 13px;
+}
+footer .social-icons i 
+{
+    font-size: 24px;
 }

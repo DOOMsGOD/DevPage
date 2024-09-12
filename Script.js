@@ -1,5 +1,5 @@
 // Developer Info
-const developerBios = {
+const devBios = {
     'Krishna Khurana': {
         bio: "Krishna Khurana is a skilled Backend & UI Developer specializing in seamless user experiences.",
         img: "developer1.jpg",
@@ -31,12 +31,10 @@ const developerBios = {
         folio: "https://mehak-portfolio.com"
     }
 };
-
 // To show the details of the developer
 function showDetails(element) {
-    const name = element.querySelector('h3').textContent;
-    const developer = developerBios[name];
-
+    const name = element.querySelector('h4').textContent;
+    const developer = devBios[name];
     if (developer) {
         document.getElementById('developer-img').src = developer.img;
         document.getElementById('developer-name').textContent = name;
@@ -50,14 +48,12 @@ function showDetails(element) {
         document.getElementById('developer-bio').textContent = "No bio available.";
         document.getElementById('developer-folio').textContent = "";
     }
-
     const overlay = document.getElementById('developer-details');
     const content = document.querySelector('.developer-details-content');
 
     overlay.classList.add('show');
     setTimeout(() => content.classList.add('show'), 100);
 }
-
 // To hide the details of the developer
 function hideDetails() {
     const overlay = document.getElementById('developer-details');
