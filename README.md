@@ -1,2 +1,2 @@
-devpage for student panel of Dbit .
-Recent Addition-footer added.
+Devpage for Student Panel of Dbit .
+Recent Addition-Footer Ddded.
