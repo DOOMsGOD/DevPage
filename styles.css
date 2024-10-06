@@ -1,9 +1,38 @@
-body
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+#preloader
 {
-    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    background-image: url('preloader2.gif');
+    background-repeat: no-repeat;
+    background-size:30%;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader .gif-border
+{
+    display: none; 
+    width: 3rem;
+    height: 3rem;
+    color: #007bff; 
+}
+body.loaded #preloader 
+{
+    display: none;
 }
 /*Developer Tiles*/
-.developer-tile
+.dev-box
 {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
@@ -14,24 +43,24 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 120%;
+    height: 110%;
     width: 100%;
 }
-.developer-tile h3
+.dev-box h3
 {
     margin: 5px 0;
     font-size:larger;
     text-align: center;
     text-justify: auto;
 }
-.developer-tile p
+.dev-box p
 {
     margin: 5px 0;
     font-size: medium;
     text-align: center;
     text-justify: auto;
 }
-.developer-tile:hover 
+.dev-box:hover 
 {
     transform: scale(1.15);
 }
@@ -40,7 +69,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid grey;
+    //border: 5px solid grey;
     padding: 2px;
     margin-bottom: 5px;
     width: 100%;
@@ -158,7 +187,7 @@ body
 /* Footer */
 footer 
 {
-    background-color: #343a40;
+    background-color: #07294d;
     color: #fff;
     padding: 40px 0;
     font-size: 14px;

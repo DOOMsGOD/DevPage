@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Team</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="gif-border text-primary" role="status">
+        </div>
+    </div>
+    <!-- Heading and Developer Tiles -->
+    <div class="container-fluid">
+        <h1 class="text-center mt-4">Meet Our Developers</h1>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-2 mb-4">
+                <div class="dev-box" onclick="showDetails(this)">
+                    <div class="photo-container">
+                        <img src="developer1.jpg" alt="Krishna Khurana, Backend & UI Developer" class="img-fluid">
+                    </div>
+                    <h4 class="mt-3">Krishna Khurana</h4>
+                    <p>Backend & UI Developer</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <div class="dev-box" onclick="showDetails(this)">
+                    <div class="photo-container">
+                        <img src="developer2.jpg" alt="Taranpreet Singh, Developer Page & UI Developer" class="img-fluid">
+                    </div>
+                    <h4 class="mt-3">Taranpreet Singh</h4>
+                    <p>Developer Page & UI Developer</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <div class="dev-box" onclick="showDetails(this)">
+                    <div class="photo-container">
+                        <img src="developer3.jpg" alt="Daksh Gulati, UI & Graphics Designer" class="img-fluid">
+                    </div>
+                    <h4 class="mt-3">Daksh Gulati</h4>
+                    <p>UI & Graphics Designer</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <div class="dev-box" onclick="showDetails(this)">
+                    <div class="photo-container">
+                        <img src="developer4.jpg" alt="Dev Gulati, Front End Developer" class="img-fluid">
+                    </div>
+                    <h4 class="mt-3">Dev Gulati</h4>
+                    <p>Front End Developer</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <div class="dev-box" onclick="showDetails(this)">
+                    <div class="photo-container">
+                        <img src="developer5.jpg" alt="Mehak, Testing" class="img-fluid">
+                    </div>
+                    <h4 class="mt-3">Mehak</h4>
+                    <p>Testing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enlarged Developer Info -->
+    <div id="developer-details" class="developer-details-overlay">
+        <div class="developer-details-content">
+            <span class="close-btn" onclick="hideDetails()">&times;</span>
+            <img id="developer-img" src="" alt="Developer Image" class="img-fluid">
+            <h4 id="developer-name"></h4>
+            <p id="developer-role"></p>
+            <p id="developer-bio"></p>
+            <div class="row-cols-1">
+                <button id="developer-folio-btn" class="btn"><font color="white">View Portfolio</font></button>
+            </div>            
+        </div>
+    </div>
+    <br>
+      <!-- Footer -->
+      <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p><img src="logo.png"></p>
+                    <h6>Don Bosco Institute Of Technology</h6>
+                    <h5>About Us</h5>
+                    <p>We are a team of passionate developers specializing in various fields such as front-end, back-end, UI/UX, and testing.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.donboscoitggsipu.org" class="text-white">Main Website</a></li>
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="https://www.donboscoitggsipu.org/contact.php" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:contact@devteam.com" class="text-white">hr@donboscoitggsipu.org</a></p>
+                    <p>Phone:
+                        +91-9868045426<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-9911297657
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://x.com/bttsggsipu" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://in.linkedin.com/in/donboscoitggsipu" class="text-white mr-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/bttsggsipu" class="text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/donbosco_ggsipu/" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCM4ZafIAJQ20jgpIMqcNshA" class="text-white"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Developer Team. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JS for Developer Info -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
